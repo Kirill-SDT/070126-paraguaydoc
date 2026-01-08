@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Paraguaydoc - Final CTA</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2463eb",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#111621",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem", 
+                        "lg": "0.5rem", 
+                        "xl": "0.75rem", 
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-[#111318] dark:text-white antialiased">
+<!-- Main Container -->
+<div class="relative flex min-h-screen w-full flex-col justify-center items-center py-10 px-4 overflow-hidden">
+<!-- Decorative Background Elements -->
+<div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
+<div class="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] rounded-full bg-primary/10 blur-[100px]"></div>
+<div class="absolute bottom-[-10%] left-[-10%] w-[600px] h-[600px] rounded-full bg-blue-400/10 blur-[120px]"></div>
+</div>
+<div class="w-full max-w-[960px] flex flex-col gap-8 md:gap-12 relative z-10">
+<!-- Header Section -->
+<div class="text-center space-y-4">
+<h2 class="text-[#111318] dark:text-white text-3xl md:text-5xl font-bold leading-tight tracking-tight">
+                    Готовы начать?
+                </h2>
+<p class="text-[#616e89] dark:text-gray-400 text-lg md:text-xl font-normal leading-relaxed max-w-2xl mx-auto">
+                    Оставьте заявку, и мы свяжемся с вами в Telegram для бесплатной консультации по вопросам иммиграции.
+                </p>
+</div>
+<!-- Form Card -->
+<div class="bg-white dark:bg-[#1a202e] rounded-2xl shadow-xl border border-[#dbdee6] dark:border-gray-800 p-6 md:p-10 lg:p-12">
+<form action="#" class="flex flex-col gap-6" method="POST">
+<!-- Row 1: Name & Telegram -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Name Field -->
+<label class="flex flex-col flex-1 group">
+<span class="text-[#111318] dark:text-gray-200 text-sm font-medium leading-normal pb-2">Ваше имя <span class="text-primary">*</span></span>
+<div class="relative flex items-center">
+<span class="absolute left-4 text-gray-400 pointer-events-none">
+<span class="material-symbols-outlined text-[20px]">person</span>
+</span>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#111318] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#dbdee6] dark:border-gray-700 bg-white dark:bg-gray-800 focus:border-primary h-14 placeholder:text-[#9ca3af] pl-[48px] pr-[15px] text-base font-normal leading-normal transition-all duration-200 ease-in-out" placeholder="Иван Иванов" required="" type="text"/>
+</div>
+</label>
+<!-- Telegram Field -->
+<label class="flex flex-col flex-1 group">
+<span class="text-[#111318] dark:text-gray-200 text-sm font-medium leading-normal pb-2">Telegram username <span class="text-primary">*</span></span>
+<div class="relative flex items-center">
+<span class="absolute left-4 text-[#2463eb] pointer-events-none">
+<span class="material-symbols-outlined text-[20px]">send</span>
+</span>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#111318] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#dbdee6] dark:border-gray-700 bg-white dark:bg-gray-800 focus:border-primary h-14 placeholder:text-[#9ca3af] pl-[48px] pr-[15px] text-base font-normal leading-normal transition-all duration-200 ease-in-out" placeholder="@username" required="" type="text"/>
+</div>
+</label>
+</div>
+<!-- Row 2: Service & Count -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Service Dropdown -->
+<label class="flex flex-col flex-1">
+<span class="text-[#111318] dark:text-gray-200 text-sm font-medium leading-normal pb-2">Интересующая услуга <span class="text-primary">*</span></span>
+<div class="relative">
+<select class="form-select flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#111318] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#dbdee6] dark:border-gray-700 bg-white dark:bg-gray-800 focus:border-primary h-14 placeholder:text-[#9ca3af] px-[15px] text-base font-normal leading-normal transition-all duration-200 ease-in-out cursor-pointer appearance-none bg-no-repeat bg-[right_1rem_center]" required="" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCco4q9TpQgk-RsymfwXwQcd-66Y5Tj-Gq-5jbTK85N5-VPWwusXb7D0L-8ZkIKDdH3Vd6tMPv_sAEdlCaI_D7omwk4vlYaKmMw8yHYEebNSxfA1B5SimqWEweRWliiRGkyc7DxY0hmbgcAgMcW8_a3LRdi8sChjTA5U4c2PiR-uWh9UQUmRXpRf0QOh0gqiNR9E8LXNS796ipVcvCXix3Wi78-9eGDRNKYk4_ued_JwYO7w-9iHQD3Ut3r77pKfAtwuzVUhY2Sv9g');">
+<option class="text-gray-400" disabled="" selected="" value="">Выберите услугу</option>
+<option value="pmzh">ПМЖ (Постоянный вид на жительство)</option>
+<option value="vnzh">ВНЖ (Временный вид на жительство)</option>
+<option value="birth">Роды в Парагвае</option>
+<option value="business">Открытие бизнеса</option>
+<option value="other">Другое</option>
+</select>
+</div>
+</label>
+<!-- Count Dropdown -->
+<label class="flex flex-col flex-1">
+<span class="text-[#111318] dark:text-gray-200 text-sm font-medium leading-normal pb-2">Количество человек (опционально)</span>
+<div class="relative">
+<select class="form-select flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#111318] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#dbdee6] dark:border-gray-700 bg-white dark:bg-gray-800 focus:border-primary h-14 placeholder:text-[#9ca3af] px-[15px] text-base font-normal leading-normal transition-all duration-200 ease-in-out cursor-pointer appearance-none bg-no-repeat bg-[right_1rem_center]" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDFJ9LqJaSxclKFzFI_-iSvfRLaclRmGo5w0o-X3zyEEiPUPoRkKqYI2cuML1Ak1rct_sCl7O6yzcNymFgk98-F1aGkc5QKgJYhbZpAQRcDKV7hqG5V2QgmVZ2gFdfRFAUtd8KRczvk9YON6Goc9bHD9iAKzDbV1XdNliCL6vkrU-Wz_EumA8g-DEvE9mL979YeQ7I3b2u4Q3UNit9nlFReJmy-UWeHOeMyp52J7x0JvHpwscSY7amJDNm4eVUjUhBiJX6Z14PNatA');">
+<option class="text-gray-400" disabled="" selected="" value="">Не выбрано</option>
+<option value="1">1 человек</option>
+<option value="2">2 человека</option>
+<option value="3-4">3-4 человека</option>
+<option value="5+">5+ человек</option>
+</select>
+</div>
+</label>
+</div>
+<!-- Row 3: Textarea -->
+<label class="flex flex-col flex-1 w-full">
+<span class="text-[#111318] dark:text-gray-200 text-sm font-medium leading-normal pb-2">Дополнительная информация (опционально)</span>
+<textarea class="form-textarea flex w-full min-w-0 flex-1 resize-y overflow-auto rounded-xl text-[#111318] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#dbdee6] dark:border-gray-700 bg-white dark:bg-gray-800 focus:border-primary min-h-[120px] placeholder:text-[#9ca3af] p-[15px] text-base font-normal leading-normal transition-all duration-200 ease-in-out" placeholder="Расскажите немного о вашей ситуации..."></textarea>
+</label>
+<!-- Row 4: Submit Button -->
+<div class="pt-4 flex flex-col items-center gap-4">
+<button class="group relative flex w-full justify-center items-center gap-2 rounded-xl bg-primary px-6 py-4 text-base font-bold text-white shadow-lg shadow-blue-500/20 transition-all duration-300 hover:bg-blue-700 hover:shadow-blue-600/30 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-4 focus:ring-blue-500/30" type="button">
+<span>Отправить заявку</span>
+<span class="material-symbols-outlined transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+</button>
+<!-- Privacy Notice -->
+<div class="flex items-center gap-2 text-center">
+<span class="material-symbols-outlined text-[16px] text-gray-400">lock</span>
+<p class="text-xs text-gray-500 dark:text-gray-400">
+                                Нажимая кнопку, вы соглашаетесь с обработкой персональных данных
+                            </p>
+</div>
+</div>
+</form>
+</div>
+<!-- Trust Badges (Optional Contextual Addition) -->
+<div class="flex flex-wrap justify-center gap-6 md:gap-12 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-green-600">verified_user</span>
+<span class="text-sm font-medium text-gray-600 dark:text-gray-400">Конфиденциально</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-blue-600">flash_on</span>
+<span class="text-sm font-medium text-gray-600 dark:text-gray-400">Быстрый ответ</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-purple-600">support_agent</span>
+<span class="text-sm font-medium text-gray-600 dark:text-gray-400">Поддержка 24/7</span>
+</div>
+</div>
+</div>
+</div>
+</body></html>
