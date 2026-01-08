@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom text gradient utility from hero.html */
+@layer utilities {
+  .text-gradient {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #2463eb, #10b981);
+  }
+}
+
+/* Base styles matching hero.html */
+body {
+  @apply bg-background-light dark:bg-background-dark text-[#111318] dark:text-white font-display min-h-screen;
+}
