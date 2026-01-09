@@ -1,0 +1,209 @@
+{
+  "version": "1.0.0",
+  "created_at": "{{ISO_TIMESTAMP}}",
+  "test_categories": {
+    "visual_regression": {
+      "description": "Compare implemented design vs VAL specifications",
+      "tests": [
+        {
+          "test_id": "VR001",
+          "name": "Color palette matches VAL",
+          "expected": "Primary color #1a1a1a, Secondary #f5f5f5, Accent #ff6b6b",
+          "actual": null,
+          "status": "pending",
+          "priority": "high"
+        },
+        {
+          "test_id": "VR002",
+          "name": "Typography scale matches VAL",
+          "expected": "h1: 3.5rem/700, h2: 2.5rem/600, body: 1rem/400",
+          "actual": null,
+          "status": "pending",
+          "priority": "high"
+        },
+        {
+          "test_id": "VR003",
+          "name": "Spacing system consistent",
+          "expected": "8px unit scale",
+          "actual": null,
+          "status": "pending",
+          "priority": "medium"
+        },
+        {
+          "test_id": "VR004",
+          "name": "Button styles match VAL",
+          "expected": "Primary: bg-primary, rounded-lg, px-8 py-3",
+          "actual": null,
+          "status": "pending",
+          "priority": "high"
+        },
+        {
+          "test_id": "VR005",
+          "name": "Grid pattern visible on hero",
+          "expected": "Millimeter paper style grid overlay",
+          "actual": null,
+          "status": "pending",
+          "priority": "high"
+        }
+      ]
+    },
+    "content_accuracy": {
+      "description": "Verify all content from UCO is present",
+      "tests": [
+        {
+          "test_id": "CA001",
+          "name": "Hero headline matches UCO",
+          "expected": "{{UCO.content.core_messaging.hero_headline}}",
+          "actual": null,
+          "status": "pending",
+          "priority": "high"
+        },
+        {
+          "test_id": "CA002",
+          "name": "CTA text matches UCO",
+          "expected": "{{UCO.content.core_messaging.cta_primary}}",
+          "actual": null,
+          "status": "pending",
+          "priority": "high"
+        }
+      ]
+    },
+    "functional_testing": {
+      "description": "User interactions work correctly",
+      "tests": [
+        {
+          "test_id": "FT001",
+          "name": "CTA button clickable",
+          "expected": "Button responds to click, triggers action",
+          "actual": null,
+          "status": "pending",
+          "priority": "high"
+        },
+        {
+          "test_id": "FT002",
+          "name": "Navigation links work",
+          "expected": "All nav links navigate correctly",
+          "actual": null,
+          "status": "pending",
+          "priority": "high"
+        }
+      ]
+    },
+    "responsive_design": {
+      "description": "Layout works on all devices",
+      "tests": [
+        {
+          "test_id": "RD001",
+          "name": "Mobile layout (375px)",
+          "expected": "1-column layout, readable text, touch-friendly buttons",
+          "actual": null,
+          "status": "pending",
+          "priority": "high"
+        },
+        {
+          "test_id": "RD002",
+          "name": "Desktop layout (1920px)",
+          "expected": "Multi-column layout, max-width 1280px",
+          "actual": null,
+          "status": "pending",
+          "priority": "high"
+        }
+      ]
+    },
+    "performance": {
+      "description": "Core Web Vitals and Lighthouse scores",
+      "tests": [
+        {
+          "test_id": "PF001",
+          "name": "Lighthouse Performance",
+          "expected": "> 90",
+          "actual": null,
+          "status": "pending",
+          "priority": "high"
+        },
+        {
+          "test_id": "PF002",
+          "name": "LCP (Largest Contentful Paint)",
+          "expected": "< 2.5s",
+          "actual": null,
+          "status": "pending",
+          "priority": "high"
+        }
+      ]
+    },
+    "accessibility": {
+      "description": "WCAG AA compliance",
+      "tests": [
+        {
+          "test_id": "A11Y001",
+          "name": "Keyboard navigation",
+          "expected": "All interactive elements accessible via keyboard",
+          "actual": null,
+          "status": "pending",
+          "priority": "high"
+        },
+        {
+          "test_id": "A11Y002",
+          "name": "aria-labels present",
+          "expected": "All buttons and links have descriptive aria-labels",
+          "actual": null,
+          "status": "pending",
+          "priority": "medium"
+        }
+      ]
+    },
+    "seo": {
+      "description": "SEO best practices",
+      "tests": [
+        {
+          "test_id": "SEO001",
+          "name": "Meta tags present",
+          "expected": "title, description, og:image, og:title, og:description",
+          "actual": null,
+          "status": "pending",
+          "priority": "high"
+        },
+        {
+          "test_id": "SEO002",
+          "name": "Semantic HTML",
+          "expected": "Proper use of header, main, section, footer",
+          "actual": null,
+          "status": "pending",
+          "priority": "medium"
+        }
+      ]
+    }
+  },
+  "manual_testing_steps": [
+    {
+      "step_id": 1,
+      "description": "Open site on desktop (Chrome, 1920x1080)",
+      "expected_result": "Site loads, hero section visible, no layout issues"
+    },
+    {
+      "step_id": 2,
+      "description": "Scroll through all sections",
+      "expected_result": "Smooth scrolling, no visual glitches"
+    },
+    {
+      "step_id": 3,
+      "description": "Click all buttons and links",
+      "expected_result": "All interactive elements respond correctly"
+    },
+    {
+      "step_id": 4,
+      "description": "Resize browser to mobile width (375px)",
+      "expected_result": "Layout adapts, remains readable"
+    },
+    {
+      "step_id": 5,
+      "description": "Test keyboard navigation (Tab through elements)",
+      "expected_result": "Focus visible, all elements accessible"
+    },
+    {
+      "step_id": 6,
+      "description": "Run Lighthouse audit",
+      "expected_result": "Performance, Accessibility, SEO scores > 90"
+    }
+  ]
+}

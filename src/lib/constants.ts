@@ -119,3 +119,133 @@ export const PRICING_CONTENT = {
   title: 'Наши услуги',
   subtitle: 'Выберите подходящий вариант для вашей ситуации',
 } as const
+
+// Timeline section content
+export const TIMELINE_CONTENT = {
+  title: 'Как проходит процесс',
+  subtitle: 'Прозрачный путь от заявки до получения документов. Мы берем на себя всю бюрократию.',
+  toggleVnzh: 'ВНЖ (Временный вид)',
+  togglePmzh: 'ПМЖ (Постоянный вид)',
+  ctaText: 'Начать консультацию',
+  presenceBadge: 'Личное присутствие',
+  importantBadge: 'Важно',
+} as const
+
+// Timeline data structure
+export interface TimelineStep {
+  step_number: number
+  title: string
+  description: string
+  duration: string
+  isImportant?: boolean
+  requiresPresence?: boolean
+  icon?: string
+  markerType?: 'number' | 'icon'
+  markerIcon?: string
+  markerColor?: 'blue' | 'orange' | 'green'
+}
+
+export const TIMELINE_DATA = {
+  vnzh: [
+    {
+      step_number: 1,
+      title: 'Заявка и консультация',
+      description: 'Оставляете заявку на сайте, мы связываемся в Telegram, уточняем детали вашей ситуации',
+      duration: '1-2 дня',
+      markerType: 'number' as const,
+      markerColor: 'blue' as const,
+      icon: 'chat',
+    },
+    {
+      step_number: 2,
+      title: 'Подготовка документов',
+      description: 'Вы собираете документы (паспорт, свидетельства, справка о судимости). Мы готовим местные документы за 2 дня',
+      duration: '2 недели',
+      markerType: 'number' as const,
+      markerColor: 'blue' as const,
+      icon: 'folder_open',
+    },
+    {
+      step_number: 3,
+      title: 'Первый визит',
+      description: 'Приезжаете в Encarnación, встреча с юристом в миграционном управлении (1 час)',
+      duration: '1 день',
+      isImportant: true,
+      requiresPresence: true,
+      markerType: 'icon' as const,
+      markerIcon: 'flight_land',
+      markerColor: 'orange' as const,
+      icon: 'location_on',
+    },
+    {
+      step_number: 4,
+      title: 'Ожидание Admisión Temporaria',
+      description: 'Базовый: 3-4 месяца. Ускоренный: 1.5-2 месяца. Можете уехать из Парагвая',
+      duration: '1.5-4 месяца',
+      markerType: 'number' as const,
+      markerColor: 'blue' as const,
+      icon: 'domain',
+    },
+    {
+      step_number: 5,
+      title: 'Подача на Cédula',
+      description: 'Второй визит для подачи документов на удостоверение личности',
+      duration: '1 день',
+      markerType: 'number' as const,
+      markerColor: 'blue' as const,
+      icon: 'hourglass_top',
+    },
+    {
+      step_number: 6,
+      title: 'Получение Cédula',
+      description: 'Базовый: 2-3 месяца. Ускоренный: 1.5-2 месяца. Забираем по доверенности и отправляем вам',
+      duration: '1.5-3 месяца',
+      markerType: 'icon' as const,
+      markerIcon: 'check',
+      markerColor: 'green' as const,
+      icon: 'badge',
+    },
+  ],
+  pmzh: [
+    {
+      step_number: 1,
+      title: 'Консультация и планирование',
+      description: 'Обсуждаем ваш бизнес-план, инвестиции ($70k+), открытие или использование компании',
+      duration: '1 неделя',
+      markerType: 'number' as const,
+      markerColor: 'blue' as const,
+      icon: 'chat',
+    },
+    {
+      step_number: 2,
+      title: 'Первый приезд (2 недели)',
+      description: 'Вступление в SUACE, подача документов на ПМЖ, открытие компании (если нужно)',
+      duration: '2 недели',
+      isImportant: true,
+      requiresPresence: true,
+      markerType: 'icon' as const,
+      markerIcon: 'flight_land',
+      markerColor: 'orange' as const,
+      icon: 'location_on',
+    },
+    {
+      step_number: 3,
+      title: 'Реализация проекта',
+      description: 'Ведем бухгалтерию, согласовываем проект, оформляем работников. Вы можете быть за границей',
+      duration: 'До 24 месяцев',
+      markerType: 'number' as const,
+      markerColor: 'blue' as const,
+      icon: 'domain',
+    },
+    {
+      step_number: 4,
+      title: 'Получение ПМЖ и Cédula',
+      description: 'ПМЖ готово через 1 месяц. Cédula ускоренно (2-3 дня) или по доверенности',
+      duration: '1-2 месяца',
+      markerType: 'icon' as const,
+      markerIcon: 'check',
+      markerColor: 'green' as const,
+      icon: 'badge',
+    },
+  ],
+} as const

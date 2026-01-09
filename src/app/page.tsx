@@ -1,6 +1,7 @@
 import Header from '@/components/Header'
 import HeroSection from '@/components/HeroSection'
 import PriceListSection from '@/components/PriceListSection'
+import TimelineSection from '@/components/TimelineSection'
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Header />
       <HeroSection />
       <PriceListSection />
+      <TimelineSection />
     </div>
   )
 }

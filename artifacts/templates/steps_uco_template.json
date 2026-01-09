@@ -1,0 +1,96 @@
+{
+  "version": "2.0.0",
+  "project_name": "{{PROJECT_NAME}}",
+  "last_updated": "{{ISO_TIMESTAMP}}",
+  "workflow_status": {
+    "step_1_questions": {
+      "status": "completed",
+      "completed_at": "{{ISO_TIMESTAMP}}",
+      "notes": "Client questions and answers collected"
+    },
+    "step_2_uco": {
+      "status": "in_progress",
+      "completed_at": null,
+      "notes": null
+    },
+    "step_3_stitch": {"status": "not_started", "completed_at": null, "notes": null},
+    "step_4_refactor": {"status": "not_started", "completed_at": null, "notes": null},
+    "step_5_polish": {"status": "not_started", "completed_at": null, "notes": null},
+    "step_6_qa": {"status": "not_started", "completed_at": null, "attempts": 0, "notes": null},
+    "step_7_fixes": {"status": "not_started", "completed_at": null, "notes": null},
+    "step_8_deploy": {"status": "not_started", "completed_at": null, "notes": null},
+    "step_9_change_management": {"status": "not_started", "completed_at": null, "notes": null}
+  },
+  "client_info": {
+    "language": "ru",
+    "raw_input": "{{INITIAL_CLIENT_INPUT}}",
+    "clarifications": [
+      {"question": "...", "answer": "..."}
+    ]
+  },
+  "business_goals": {
+    "target_audience": "...",
+    "primary_kpi": "conversion_to_contact_form",
+    "secondary_kpis": ["seo_ranking", "brand_awareness"],
+    "competitive_advantage": "...",
+    "brand_emotions": ["trust", "innovation", "simplicity"]
+  },
+  "content": {
+    "core_messaging": {
+      "value_proposition": "One-sentence value prop",
+      "hero_headline": "Main headline",
+      "hero_subheadline": "Supporting text",
+      "cta_primary": "Primary CTA text",
+      "cta_secondary": "Secondary CTA text"
+    },
+    "pages": [
+      {
+        "page_id": "home",
+        "title": "Homepage",
+        "url": "/",
+        "sections": [
+          {
+            "section_id": "hero",
+            "type": "hero_section",
+            "content": "...",
+            "required_elements": ["headline", "cta_button", "hero_image"]
+          }
+        ]
+      }
+    ],
+    "media": {
+      "images": [],
+      "videos": [],
+      "client_provided": false,
+      "generate_ai": true
+    }
+  },
+  "technical_requirements": {
+    "stack": {
+      "frontend": "NextJS + TypeScript + TailwindCSS",
+      "hosting": "client_server",
+      "domain": "example.com",
+      "ssl": "required"
+    },
+    "seo": {
+      "meta_description": "...",
+      "keywords": ["keyword1", "keyword2"],
+      "open_graph": true
+    },
+    "performance": {
+      "core_web_vitals": true,
+      "lighthouse_target": 90,
+      "mobile_first": true
+    },
+    "accessibility": {
+      "wcag_level": "AA",
+      "screen_reader_compatible": true
+    }
+  },
+  "project_artifacts": {
+    "stitch_prompt": null,
+    "stitch_sections": false,
+    "components_refactored": false,
+    "qa_test_plan": null
+  }
+}
