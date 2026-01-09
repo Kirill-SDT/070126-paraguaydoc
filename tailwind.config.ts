@@ -16,6 +16,7 @@ const config: Config = {
         'background-dark': '#111621',
         'secondary-green': '#10b981',
         'accent-amber': '#f59e0b',
+        'card-dark': '#1a2333',
       },
       fontFamily: {
         display: ['var(--font-inter)', 'Inter', 'sans-serif'],

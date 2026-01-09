@@ -5,6 +5,7 @@ export const COLORS = {
   accentAmber: '#f59e0b',
   backgroundLight: '#f6f6f8',
   backgroundDark: '#111621',
+  cardDark: '#1a2333',  // Dark mode card background for PriceList section
 } as const
 
 export const HERO_CONTENT = {
@@ -42,4 +43,79 @@ export const IMAGES = {
     'https://lh3.googleusercontent.com/aida-public/AB6AXuDPx-7nvN-htatAHtJ17p3x4x0HSBDdO0_XDFyR7GRECd9_EZriZvHbKNZEBqIXmDt-EYByJucbnvC0ucsC3M7d0sx5iYsckVgVRcKqPNRIrGBHQHRpcMvylUp8JfpvWAUKaT5tE4HrGN7QuBqud6qaJuNrLvaB1CRmhAtdlfNSXUQmBLW1DBxPtdLSnfXljGDNO0BoNFrRMsX0mmL9wwTLgH2mLgw02720ON5gubrvkVz5gpBRNjsaVNAeyorCbvx5rQYNutcKFbQ',
     'https://lh3.googleusercontent.com/aida-public/AB6AXuCVDbRNF_vgksybKR_nSqQQtnlRc6WMOPuVi81Shd5s68Q6B_60GTLQa3Zh7V0T-DneJjJdgYir4JOTNKJKSg0QjD0d2fwbVK9LtthYILSTCzY3soGG4Yn4zug4J_wyeZlBXuZLYrpRFDJ6iQ3ravJokN3VbR27eLmukjWSNFGXea_UKwzBizoDK6Gbjk3cLWWG2ITDav1aD2fiMi5rgHWq9mTIizgfKY5Ype8oXRc11i5iSoCmiLKSgyBdOk8bPldVf5mqBqBsJx8',
   ],
+} as const
+
+// Pricing services data
+export const SERVICES = [
+  {
+    id: 'vnzh_basic',
+    badge: { text: 'Базовый', bgColor: 'bg-gray-100 dark:bg-gray-800', textColor: 'text-gray-600 dark:text-gray-300' },
+    title: 'ВНЖ Базовый',
+    price: '$1,400',
+    timeline: '6-7 месяцев',
+    bestFor: 'Семьи и удаленные специалисты',
+    features: [
+      'Admisión Temporaria: 3-4 месяца',
+      'Cédula: 2-3 месяца',
+      'Один визит в миграционное управление',
+      'Получение Cédula по доверенности',
+    ],
+    iconColor: 'text-primary',
+    highlighted: false,
+  },
+  {
+    id: 'vnzh_fast',
+    badge: { text: 'Рекомендуем', bgColor: 'bg-gradient-to-r from-primary to-blue-500', textColor: 'text-white' },
+    title: 'ВНЖ Ускоренный',
+    price: '$2,200',
+    timeline: '2.5-4 месяца',
+    bestFor: 'Быстрое получение документов',
+    features: [
+      'Admisión Temporaria: 1.5-2 месяца',
+      'Cédula: 1.5-2 месяца',
+      'Ускоренное рассмотрение',
+      'Получение Cédula по доверенности',
+    ],
+    iconColor: 'text-primary',
+    highlighted: true,
+    highlightBadge: 'Популярный выбор',
+  },
+  {
+    id: 'pmzh_full',
+    badge: { text: 'Премиум', bgColor: 'bg-purple-50 dark:bg-purple-900/20', textColor: 'text-purple-600 dark:text-purple-300' },
+    title: 'ПМЖ под ключ',
+    price: '$9,500',
+    timeline: '1 месяц + подготовка',
+    bestFor: 'Предприниматели с капиталом $70k+',
+    features: [
+      'Открытие компании (EAS)',
+      'Ведение бухгалтерии 6 месяцев',
+      'Бизнес-проект под SUACE',
+      'Ускоренная Cédula (2-3 дня)',
+      'Оформление 5 работников',
+    ],
+    iconColor: 'text-purple-500',
+    highlighted: false,
+  },
+  {
+    id: 'pmzh_existing',
+    badge: { text: 'Для бизнеса', bgColor: 'bg-amber-50 dark:bg-amber-900/20', textColor: 'text-amber-700 dark:text-amber-400' },
+    title: 'ПМЖ с компанией',
+    price: '$6,000',
+    timeline: '1 месяц',
+    bestFor: 'Уже есть компания в Парагвае',
+    features: [
+      'Сопровождение SUACE',
+      'Оформление ПМЖ',
+      'Подача на Cédula',
+      'Юридическая поддержка',
+    ],
+    iconColor: 'text-amber-500',
+    highlighted: false,
+  },
+] as const
+
+export const PRICING_CONTENT = {
+  title: 'Наши услуги',
+  subtitle: 'Выберите подходящий вариант для вашей ситуации',
 } as const
