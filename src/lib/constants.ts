@@ -249,3 +249,231 @@ export const TIMELINE_DATA = {
     },
   ],
 } as const
+
+// Additional Services section content
+export const ADDITIONAL_SERVICES_CONTENT = {
+  sectionLabel: 'Дополнительно',
+  title: 'Дополнительные услуги',
+  subtitle: 'Мы позаботимся о всех нюансах вашего переезда, чтобы вы могли сосредоточиться на главном.',
+  ctaQuestion: 'Нужна индивидуальная услуга?',
+  ctaLink: 'Свяжитесь с нами для консультации',
+} as const
+
+// Additional Service interface
+export interface AdditionalService {
+  id: string
+  icon: string
+  title: string
+  price: string
+  priceType: 'fixed-green' | 'fixed-blue' | 'request'
+  description: string
+  details: string[]
+  buttonText: string
+  buttonStyle: 'primary' | 'outline'
+}
+
+// Additional Services data
+export const ADDITIONAL_SERVICES: AdditionalService[] = [
+  {
+    id: 'police_clearance',
+    icon: 'gavel',
+    title: 'Справка об отсутствии судимости в Asunción',
+    price: '$150',
+    priceType: 'fixed-green',
+    description: 'Полное сопровождение в Интерполе и департаменте полиции для получения необходимой справки. Мы берем на себя взаимодействие с госорганами.',
+    details: [
+      'Включает все госпошлины',
+      'Официальный перевод документов',
+      'Срок выполнения: 1-2 рабочих дня',
+    ],
+    buttonText: 'Добавить',
+    buttonStyle: 'primary',
+  },
+  {
+    id: 'airport_pickup',
+    icon: 'airport_shuttle',
+    title: 'Встреча из аэропорта Asunción',
+    price: '$50',
+    priceType: 'fixed-blue',
+    description: 'Персональная встреча в зоне прилета. Водитель поможет с багажом и доставит вас до места проживания в черте города.',
+    details: [
+      'Ожидание рейса (даже при задержке)',
+      'Помощь с покупкой местной SIM-карты',
+      'Комфортабельный автомобиль с кондиционером',
+    ],
+    buttonText: 'Добавить',
+    buttonStyle: 'primary',
+  },
+  {
+    id: 'accommodation',
+    icon: 'apartment',
+    title: 'Размещение на период оформления',
+    price: 'По запросу',
+    priceType: 'request',
+    description: 'Мы поможем найти безопасное и комфортное жилье на время подачи документов. У нас есть база проверенных отелей и апартаментов.',
+    details: [
+      'Районы с развитой инфраструктурой',
+      'Близость к миграционному центру',
+      'Варианты на любой бюджет',
+    ],
+    buttonText: 'Узнать цену',
+    buttonStyle: 'outline',
+  },
+]
+
+// Checklist section content
+export const CHECKLIST_CONTENT = {
+  sectionLabel: 'Документы',
+  title: 'Что нужно для подачи',
+  subtitle: 'Мы подготовили для вас полный список обязательных документов для оформления вида на жительство.',
+  toggleVnzh: 'ВНЖ (Временный)',
+  togglePmzh: 'ПМЖ (Постоянный)',
+  sidebarTitle: 'Важно знать',
+  sidebarText: 'Процесс получения ВНЖ в Парагвае один из самых быстрых в Латинской Америке. Главное — правильно подготовить пакет документов с апостилем.',
+  sidebarItems: [
+    { icon: 'translate', text: 'Перевод на испанский' },
+    { icon: 'history_edu', text: 'Нотариальное заверение' },
+    { icon: 'gavel', text: 'Легализация' },
+  ],
+  helpTitle: 'Нужна помощь?',
+  helpText: 'Напишите нам в чат',
+  infoNote: 'Все документы должны быть переведены на испанский язык лицензированным переводчиком в Парагвае. Наши юристы помогут вам с организацией перевода.',
+  infoNoteLabel: 'Обратите внимание:',
+  ctaTitle: 'Хотите получить полный список со всеми нюансами?',
+  ctaSubtitle: 'Скачайте подробный PDF-файл, где мы расписали каждый шаг и требования к каждому документу.',
+  ctaButton: 'Скачать полный список (PDF)',
+  ctaNote: 'Бесплатно • Обновлено в 2024',
+} as const
+
+// Checklist item interface
+export interface ChecklistItem {
+  id: string
+  title: string
+  description: string
+  badge: {
+    text: string
+    type: 'required' | 'original' | 'copy' | 'conditional'
+  }
+  isRequired: boolean
+}
+
+// Checklist data for VNZ and PMZ
+export const CHECKLIST_DATA = {
+  vnzh: [
+    {
+      id: 'criminal_record',
+      title: 'Справка о несудимости',
+      description: 'Оригинал справки. Срок действия строго от 3 до 6 месяцев на момент подачи.',
+      badge: { text: 'Апостиль обязателен', type: 'required' as const },
+      isRequired: true,
+    },
+    {
+      id: 'birth_certificate',
+      title: 'Свидетельство о рождении',
+      description: 'Документ должен быть в хорошем состоянии, читаемым, с проставленным апостилем.',
+      badge: { text: 'Оригинал', type: 'original' as const },
+      isRequired: true,
+    },
+    {
+      id: 'passport',
+      title: 'Загранпаспорт',
+      description: 'Срок действия паспорта должен быть не менее 6 месяцев с даты въезда в страну.',
+      badge: { text: 'Копия всех страниц', type: 'copy' as const },
+      isRequired: true,
+    },
+    {
+      id: 'marriage_certificate',
+      title: 'Свидетельство о браке',
+      description: 'Требуется только для семейных пар. Также необходим апостиль на оригинале.',
+      badge: { text: 'Если применимо', type: 'conditional' as const },
+      isRequired: false,
+    },
+  ],
+  pmzh: [
+    {
+      id: 'investment',
+      title: 'Подтверждение инвестиций',
+      description: 'Документы, подтверждающие инвестиции от $70,000 в экономику Парагвая.',
+      badge: { text: 'Обязательно', type: 'required' as const },
+      isRequired: true,
+    },
+    {
+      id: 'business_plan',
+      title: 'Бизнес-проект',
+      description: 'Разрабатываем вместе под требования SUACE. Включает план найма работников.',
+      badge: { text: 'Оригинал', type: 'original' as const },
+      isRequired: true,
+    },
+    {
+      id: 'company_docs',
+      title: 'Документы компании',
+      description: 'Регистрация EAS или существующей компании в Парагвае.',
+      badge: { text: 'Оригинал', type: 'original' as const },
+      isRequired: true,
+    },
+    {
+      id: 'criminal_record_pmzh',
+      title: 'Справка о несудимости',
+      description: 'Оригинал справки с апостилем. Срок действия от 3 до 6 месяцев.',
+      badge: { text: 'Апостиль обязателен', type: 'required' as const },
+      isRequired: true,
+    },
+    {
+      id: 'passport_pmzh',
+      title: 'Загранпаспорт',
+      description: 'Срок действия не менее 6 месяцев. Копии всех страниц с отметками.',
+      badge: { text: 'Копия всех страниц', type: 'copy' as const },
+      isRequired: true,
+    },
+  ],
+} as const
+
+// Trust section content
+export const TRUST_CONTENT = {
+  title: 'Почему нам доверяют',
+  subtitle: 'Мы ценим ваше доверие и строим работу на принципах честности и открытости. Наш опыт — ваша безопасность.',
+} as const
+
+// Trust signal interface
+export interface TrustSignal {
+  id: string
+  icon: string
+  title: string
+  description: string
+}
+
+// Trust signals data (from UCO.json trust_elements)
+export const TRUST_SIGNALS: TrustSignal[] = [
+  {
+    id: 'transparency',
+    icon: 'visibility',
+    title: 'Прозрачность на каждом этапе',
+    description: 'Вы всегда знаете, на каком этапе находятся ваши документы, сколько времени осталось, что происходит дальше',
+  },
+  {
+    id: 'real_people',
+    icon: 'business',
+    title: 'Реальные люди, реальный офис',
+    description: 'Мы живем в Encarnación, вы встречаетесь с нами лично, общаемся через Telegram без посредников',
+  },
+  {
+    id: 'clear_pricing',
+    icon: 'payments',
+    title: 'Никаких скрытых платежей',
+    description: 'Цена, которую вы видите — финальная. Все дополнительные услуги опциональны и указаны отдельно',
+  },
+  {
+    id: 'step_by_step',
+    icon: 'handshake',
+    title: 'Сопровождение от начала до конца',
+    description: 'От первой консультации до получения Cédula — мы с вами на каждом шаге',
+  },
+]
+
+// Telegram CTA content
+export const TELEGRAM_CTA = {
+  title: 'Посмотрите наши реальные обновления и отзывы',
+  subtitle: 'Присоединяйтесь к нашему сообществу в Telegram, чтобы быть в курсе последних новостей иммиграционного законодательства и читать истории успеха наших клиентов.',
+  buttonText: 'Перейти в Telegram-канал',
+  buttonIcon: 'send',
+} as const

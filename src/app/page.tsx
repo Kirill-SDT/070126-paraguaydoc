@@ -2,6 +2,9 @@ import Header from '@/components/Header'
 import HeroSection from '@/components/HeroSection'
 import PriceListSection from '@/components/PriceListSection'
 import TimelineSection from '@/components/TimelineSection'
+import AdditionalServicesSection from '@/components/AdditionalServicesSection'
+import ChecklistSection from '@/components/ChecklistSection'
+import TrustSection from '@/components/TrustSection'
 
 export default function Home() {
   return (
@@ -10,6 +13,9 @@ export default function Home() {
       <HeroSection />
       <PriceListSection />
       <TimelineSection />
+      <AdditionalServicesSection />
+      <ChecklistSection />
+      <TrustSection />
     </div>
   )
 }

@@ -63,7 +63,36 @@
 </div>
 </header>
 </div>
-
+<!-- Hero Section (Generated for context) -->
+<div class="w-full bg-white dark:bg-[#111621] pt-10 pb-6 md:pt-16 md:pb-12">
+<div class="max-w-[1280px] mx-auto px-4 md:px-10 flex flex-col md:flex-row gap-10 items-center">
+<div class="flex-1 flex flex-col gap-6">
+<h1 class="text-[#111318] dark:text-white text-4xl md:text-6xl font-black leading-tight tracking-tight">
+                        ВНЖ и ПМЖ в Парагвае для всей семьи
+                    </h1>
+<p class="text-[#616e89] dark:text-gray-400 text-lg md:text-xl font-normal leading-relaxed max-w-[600px]">
+                        Помогаем русскоязычным специалистам и семьям легально переехать. Полное сопровождение, минимум бюрократии и гарантия результата.
+                    </p>
+<div class="flex gap-4 flex-wrap">
+<button class="h-12 px-6 rounded-lg bg-primary text-white font-bold text-base hover:bg-blue-700 transition-colors">
+                            Бесплатная консультация
+                        </button>
+<button class="h-12 px-6 rounded-lg border border-[#dbdee6] dark:border-gray-700 text-[#111318] dark:text-white font-bold text-base hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+                            Узнать больше
+                        </button>
+</div>
+</div>
+<div class="flex-1 w-full h-[300px] md:h-[400px] rounded-xl overflow-hidden bg-gray-200 relative">
+<!-- Image Placeholder -->
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Modern Asuncion cityscape skyline with green trees" data-location="Asuncion, Paraguay" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDp_Zz4sQkRCptYCLmhsi_nuxqT_4wF0vEe_fxVFRjX6F6CL3cgkroe567OO1_5Erv69QSwmA1Z_4MXbDi1TGY-LkNtDPk5q78T34yOFtsbVhoD2xFitqn-kaJPFxlezgI1l7XMjq73tVlYQWEpg0RbtgFeXkAEYYHeF0ODMd9p0Stw0B6kj0OZhhbq6OV51azdIW-rMTF9o2RQKImZUKcPsde-qP_7T_AF5yI2Pr-ZrPFQ-bLtzyPvB1_b1XgUvXAgW3ZYg8H1DKo');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+<div class="absolute bottom-4 left-4 text-white text-sm font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-base">location_on</span>
+                        Asunción, Paraguay
+                    </div>
+</div>
+</div>
+</div>
 <!-- Trust Section (FeatureSection) -->
 <section class="w-full bg-[#f8f9fa] dark:bg-[#161b26] py-16 md:py-24">
 <div class="max-w-[1280px] mx-auto px-4 md:px-10">
